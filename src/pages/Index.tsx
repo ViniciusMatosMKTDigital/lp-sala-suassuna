@@ -6,6 +6,7 @@ import IdealForSection from "@/components/landing/05IdealForSection";
 import ReviewsSection from "@/components/landing/06ReviewsSection";
 import LocationSection from "@/components/landing/07LocationSection";
 import FooterCTA from "@/components/landing/08FooterCTA";
+import WhatsAppFloat from "@/components/landing/09WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <ReviewsSection />
       <LocationSection />
       <FooterCTA />
+      <WhatsAppFloat />
     </div>
   );
 };
