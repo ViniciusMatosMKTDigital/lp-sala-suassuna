@@ -17,7 +17,16 @@ const FooterCTA = () => (
       <p className="text-lg opacity-60 mb-10 font-light">
         Agende uma visita e conheça a Sala Suassuna pessoalmente.
       </p>
-      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+      <a 
+        href={WHATSAPP_LINK} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onClick={() => {
+          if (typeof window.gtagSendEvent === 'function') {
+            window.gtagSendEvent(WHATSAPP_LINK);
+          }
+        }}
+      >
         <Button size="lg" variant="secondary" className="text-base px-8 py-6 font-semibold group">
           Falar no WhatsApp
           <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

@@ -3,6 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 
+declare global {
+  interface Window {
+    gtagSendEvent?: (url: string) => void;
+  }
+}
+
 const WHATSAPP_LINK = "https://wa.me/553121158984/?text=Olá!+Vi+no+site+sua+promoção+da+sala+privativa+Suassuna.+A+sala+ainda+está+disponível?";
 
 const HeroSection = () => (
@@ -56,10 +62,10 @@ const HeroSection = () => (
         transition={{ duration: 0.6, delay: 0.5 }}
         className="text-lg md:text-xl font-light opacity-70 mb-6 max-w-2xl mx-auto"
       >
-        Sala comercial mobiliada para equipes de até 17 pessoas · 38m²           
+        Sala comercial mobiliada para equipes de até 17 pessoas · 38m²
       </motion.p>
 
-      {/* Subtitle */}
+      {/* Subtitle 2 */}
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -75,7 +81,7 @@ const HeroSection = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <a 
+        <a
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
