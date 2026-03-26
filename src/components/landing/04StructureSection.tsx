@@ -7,7 +7,7 @@ const features = [
   { icon: Monitor, label: "15 mesas", desc: "operacionais" },
   { icon: Crown, label: "2 mesas", desc: "de gestor / liderança" },
   { icon: Wind, label: "2 Ar Condicionados", desc: "de 28.000 BTUs cada" },
-  { icon: Wifi, label: "3 opções de internet", desc: "Algas e duas Starlinks" },
+  { icon: Wifi, label: "3 opções de internet", desc: "1 Algar e 2 Starlink" },
   { icon: Clock, label: "10h/mês", desc: "de sala de reunião" },
   { icon: Armchair, label: "100%", desc: "mobiliada" },
   { icon: Plug, label: "Tomadas", desc: "e cabo de rede em todas as mesas" },
