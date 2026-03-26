@@ -34,7 +34,7 @@ const photos = [
     span: "" 
   },
   { 
-    src: "images/sala-suassuna-07.png", 
+    img: "/images/sala-suassuna-07.png",
     alt: "Duas mesas de gestores e quadro", 
     span: "md:col-span-2" 
   },
@@ -62,7 +62,7 @@ const GallerySection = () => {
               <button
                 key={i}
                 onClick={() => {
-                  setSelectedImage(photo.src);
+                  setSelectedImage(photo.src); // Alterado de .img para .src
                   setSelectedAlt(photo.alt);
                 }}
                 className={`group relative overflow-hidden rounded-2xl border border-border ${photo.span}`}

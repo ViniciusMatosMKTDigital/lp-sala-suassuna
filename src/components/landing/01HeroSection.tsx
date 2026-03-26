@@ -75,7 +75,16 @@ const HeroSection = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+        <a 
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            if (typeof window.gtagSendEvent === 'function') {
+              window.gtagSendEvent(WHATSAPP_LINK);
+            }
+          }}
+        >
           <Button
             size="lg"
             variant="secondary"
